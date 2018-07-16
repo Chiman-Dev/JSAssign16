@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>FP Helper</title>
+	</head>
+	<body>
+		<script>
+			var numbers = [10, 8, 12, 36];
+			var doubles = numbers.map(function (x) {//Using map to go through each element and return double
+				return x * 2
+				
+			});
+			console.log("Array value after making it double: "+doubles.toString());//Converting array to string
+			var fil=doubles.filter(function(element) { //filter function to satisfy applied conditions
+				return element>20;
+			});
+			console.log("Value greater than 20 is: "+fil.toString());
+			function getSum(total, num) { //methods which adds the number
+			    return total + num;
+			}
+			fil.reduce(getSum);
+		</script>
+	</body>
+</html>
